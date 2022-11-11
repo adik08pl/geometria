@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="ALL_TABS" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stempien.geometric.HelloController">
+  <tabs>
+      <Tab text="Tytółowa">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="57.0" layoutY="23.0" text="Kalkulator poli figur">
+                     <font>
+                        <Font size="56.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+    <Tab text="Romb">
+         <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="186.0" fitWidth="252.0" layoutX="314.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Rhombus.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnLiczRomg" layoutX="80.0" layoutY="245.0" mnemonicParsing="false" onAction="#LiczRomb" prefHeight="78.0" prefWidth="168.0" text="Licz" />
+                  <TextField fx:id="txtPrzekatnaRombu1" layoutX="90.0" layoutY="84.0" promptText="Podaj e" />
+                  <TextField fx:id="txtPrzekatnaRombu2" layoutX="90.0" layoutY="161.0" promptText="Podaj f" />
+                  <Label layoutX="326.0" layoutY="16.0" prefHeight="44.0" prefWidth="80.0" text="Pole = " />
+                  <Label fx:id="lblPoleRomb" layoutX="366.0" layoutY="30.0" />
+               </children></AnchorPane>
+         </content>
+    </Tab>
+      <Tab text="Równoległobok">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="186.0" fitWidth="252.0" layoutX="314.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../rownoleglobok.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnLiczRownoleglobok" layoutX="80.0" layoutY="245.0" mnemonicParsing="false" onAction="#LiczRownoleglobok" prefHeight="78.0" prefWidth="168.0" text="Licz" />
+                  <TextField fx:id="txtBokRownolegloboku" layoutX="90.0" layoutY="84.0" promptText="Podaj a" />
+                  <TextField fx:id="txtWysokoscRownolegloboku" layoutX="90.0" layoutY="161.0" promptText="Podaj h" />
+                  <Label layoutX="413.0" layoutY="75.0" prefHeight="44.0" prefWidth="80.0" text="Pole = " />
+                  <Label fx:id="lblPoleRownolegloboku" layoutX="453.0" layoutY="89.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Trapez">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="186.0" fitWidth="252.0" layoutX="314.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../trapez.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnLiczTrapez" layoutX="80.0" layoutY="245.0" mnemonicParsing="false" onAction="#LiczTrapez" prefHeight="78.0" prefWidth="168.0" text="Licz" />
+                  <TextField fx:id="txtBokTrapezu1" layoutX="90.0" layoutY="91.0" promptText="Podaj a" />
+                  <TextField fx:id="txtWysokoscTrapezu" layoutX="90.0" layoutY="161.0" promptText="Podaj h" />
+                  <Label layoutX="389.0" layoutY="47.0" prefHeight="44.0" prefWidth="80.0" text="Pole = " />
+                  <Label fx:id="lblPoleTrapez" layoutX="434.0" layoutY="61.0" />
+                  <TextField fx:id="txtBokTrapezu2" layoutX="90.0" layoutY="126.0" promptText="Podaj b" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Kwadrat">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="186.0" fitWidth="252.0" layoutX="314.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Kwadrat.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnLiczKwadrat" layoutX="80.0" layoutY="245.0" mnemonicParsing="false" onAction="#LiczKwadrat" prefHeight="78.0" prefWidth="168.0" text="Licz" />
+                  <TextField fx:id="txtKwadratBok" layoutX="90.0" layoutY="131.0" promptText="Podaj a" />
+                  <Label layoutX="359.0" layoutY="87.0" prefHeight="44.0" prefWidth="80.0" text="Pole = " />
+                  <Label fx:id="lblPoleKwadrat" layoutX="401.0" layoutY="101.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Prostokąt">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="239.0" fitWidth="210.0" layoutX="379.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../prostokat.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnLiczProstokat" layoutX="80.0" layoutY="245.0" mnemonicParsing="false" onAction="#LiczProstokat" prefHeight="78.0" prefWidth="168.0" text="Licz" />
+                  <TextField fx:id="txtProstokatBok1" layoutX="90.0" layoutY="119.0" promptText="Podaj a" />
+                  <Label layoutX="401.0" layoutY="88.0" prefHeight="44.0" prefWidth="80.0" text="Pole = " />
+                  <Label fx:id="lblPoleProstokat" layoutX="441.0" layoutY="102.0" text="89" />
+                  <TextField fx:id="txtProstokatBok2" layoutX="90.0" layoutY="167.0" promptText="Podaj b" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
